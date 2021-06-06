@@ -1,3 +1,20 @@
+
+<div id="formId"class="form-Content">
+  <form  class="form" action="#"onreset="resetform()" on submit="save()">
+      <div class="form-head">Employee Payroll  form</div>
+      <div class="row content">
+          <label class="label text" for="name">Name</label>
+          <input class ="input" type="text" id="name" name="name"
+           placeholder="your name.." required>
+               <error-output class ="text -error" for="text"></error-output>
+           </input>
+      </div>
+
+      </form>  
+</div>
+
+
+
 document.getElementById("submit").onclick = function() {
     let employee = new EmployeePayroll();
     employee.name = document.getElementById("name").value;
